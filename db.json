@@ -14,27 +14,27 @@
     "skills" : [
         {
             "technology" : "Html5",
-            "logo" : "lien_logo"
+            "logo" : "images/technos/new/html.png"
         },
         {
             "technology" : "Css3 (saas)",
-            "logo" : "lien_logo"
+            "logo" : "images/technos/new/css.png"
         },
         {
             "technology" : "Javascript",
-            "logo" : "lien_logo"
+            "logo" : "images/technos/new/js.png"
         },
         {
             "technology" : "Bases de données relationnelles",
-            "logo" : "lien_logo"
+            "logo" : "images/technos/new/relational-database.png"
         },
         {
             "technology" : "MongodB",
-            "logo" : "lien_logo"
+            "logo" : "images/technos/new/mongodb.png"
         },
         {
             "technology" : "nodeJs",
-            "logo" : "lien_logo"
+            "logo" : "images/technos/new/nodejs.png"
         }
         
         
