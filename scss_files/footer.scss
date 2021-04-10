@@ -1,0 +1,152 @@
+@import "../main.scss";
+.footer{
+    background-color: $color-gray;
+    position: relative;
+    overflow: hidden;    
+    .footer__second-corner{
+        @include shape();
+        background-color: $color-blue;
+        right: -4em;
+        top: -9.5em;
+    }
+    .footer__container{
+        @include flex-two();
+        .footer__container__row{
+            @include flex-one();
+            margin: 0;
+            padding: 30px 0;
+            @media (max-width:540px) {
+                @include flex-two();
+                justify-content: center;
+            }
+            .footer__container__row__content{
+                @include flex-one();
+                q{
+                    @include text-appearance($color-yellow);
+                }
+            }
+            .footer__container__row__separator{
+                @include flex-one();
+                justify-content: center;
+                .empty-point{
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 50%;
+                    background-color: $color-yellow;
+                    position: relative;
+                    box-shadow: 3px 1.5px $color-white;
+                    @media (max-width:540px) {
+                        margin: 10px;
+                        width: 20px;
+                        height: 20px;
+                        box-shadow: 3px $color-white;
+                    }
+                    &::before{
+                        content: "";
+                        width: 0;
+                        height: 16em;
+                        border-left: 7px dashed $color-yellow;
+                        position: absolute;
+                        left: 10px;
+                        top: -7.09em;
+                        @media (max-width:540px) {
+                            height: 16em;
+                            transform: rotate(90deg);
+                        }
+                        
+                    }
+                }
+            }
+            .footer__container__row__newsletter{
+                p{
+                    @include text-appearance($color-white);
+                }
+                .newsletter__input{
+                    @include text-appearance($color-white);
+                    font-size: 18px;
+                    border-bottom:2px solid $color-yellow;
+                    &:focus{
+                    outline: none;
+                    border-bottom: 2px solid $color-white;
+                   }
+
+                }
+                .newsletter__button{
+                    @include bouton($color-white, $color-gray, $color-white);
+                    border: 3px solid $color-yellow;
+                }
+            }
+        }
+        .footer__paragraph{
+          @include text-appearance($color-white);
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          .social-network{
+              display: inline;
+              margin: 0;
+              padding: 0;
+              a{
+                  text-decoration: none;
+                  color: $color-white;
+              }
+          }
+          p{
+              display: inline;
+              margin: 0;
+              padding: 0;
+              
+              a{
+                color: $color-yellow;
+                cursor: inherit;
+              }
+          }
+    
+        }
+    }
+   
+}
+footer{
+    padding: 20px 0;
+    background-color: rgb(27, 26, 26);
+    @include flex-two();
+    justify-content: center;
+    .footer-link{
+        @include text-appearance($color-white);
+        position: relative;
+        margin-bottom: 5px;
+        &:hover{
+            color: $color-yellow;  
+                  
+        }
+        &:hover::after{
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: -webkit-linear-gradient(45deg, $color-white 46%, $color-yellow 0%);
+            position: absolute;
+            left: 0;
+            top: 30px;
+            transition: all .9s ease;
+            animation: hover-effect .9s ease-in-out 1;
+            @media (max-width:768px) {
+                top: 20px;
+            }
+            @keyframes hover-effect {
+                0%{
+                    width: 0%;
+                    transition: all .9s ease;
+                }
+                100%{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    p{
+        @include text-appearance($color-white);
+      
+    }
+   
+}

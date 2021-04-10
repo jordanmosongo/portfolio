@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0px;
+}
+
+.navbar {
+  height: 4.5rem;
+  position: fixed;
+  z-index: 9999;
+}
+.navbar.navbar--color {
+  background-color: #3c3d71;
+}
+.navbar .nav-wrapper .brand-logo--color {
+  color: #ff9100;
+  font-family: "Lobster", cursive;
+  font-size: 3em;
+}
+.navbar .menu-link .menu-link__item.menu-link__item--style {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+.navbar .menu-link .menu-link__item.menu-link__item--style.active {
+  color: #ff9100;
+  background-color: #ffffff;
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+  border-radius: 0 0 15px 15px;
+}
+.navbar .menu-link .menu-link__item.menu-link__item--style:hover {
+  color: #ff9100;
+  background-color: #3c3d71;
+  position: relative;
+}
+.navbar .menu-link .menu-link__item.menu-link__item--style:hover::after {
+  content: "";
+  width: 63%;
+  height: 2px;
+  background: -webkit-linear-gradient(45deg, #ffffff 46%, #ff9100 0%);
+  position: absolute;
+  left: 15px;
+  top: 50px;
+  transition: all 0.9s ease;
+  animation: hover-effect 0.9s ease-in-out 1;
+}
+@keyframes hover-effect {
+  0% {
+    width: 0%;
+    transition: all 0.9s ease;
+  }
+  100% {
+    width: 63%;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

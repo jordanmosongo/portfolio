@@ -1,0 +1,67 @@
+@import "../main.scss";
+.contact{
+    background-color: $color-blue;
+    position: relative;
+    overflow: hidden;  
+    @include flex-two();
+    justify-content: center; 
+    h2{
+        @include sub-title($color-white, $color-white);
+    } 
+    .container-content{
+        padding-bottom: 10px;
+       .row{
+            @include flex-one();
+            justify-content: center;  
+            .contact__message{
+                form{
+                    background-color: $color-white;
+                    padding: 50px 20px;
+                    box-sizing: border-box;
+                    width: 100%;
+                    box-shadow: 10px 10px 10px black;
+                    border-radius: 10px;                    
+                    .form-content{
+                        .form-group{
+                            margin-bottom: 5px;
+                            box-sizing: border-box;
+                            label{
+                                @include text-appearance($color-blue);
+                                font-size: 18px;
+                            }
+                            input, select{
+                                @include text-appearance($color-gray);
+                                font-size: 18px;
+                                border-bottom:2px solid $color-blue;
+                                &:focus{
+                                    outline: none;
+                                    border-bottom: 2px solid $color-yellow;
+                                }
+                            }
+                            
+                            textarea{
+                                height: 7em;
+                                border:none;
+                                border-bottom: 2px solid $color-blue;
+                                @include text-appearance($color-gray);
+                                font-size: 18px;
+                                &:focus{
+                                    outline: none;
+                                    border-bottom: 2px solid $color-yellow;
+                                }
+                            }                           
+                        }
+                    }
+                    .form-button{
+                        .btn-large{
+                            @include bouton($color-white, $color-blue, $color-yellow);
+                        }
+                    }
+                }
+    
+            }
+        }
+        
+        
+    }
+}

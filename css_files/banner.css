@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0px;
+}
+
+.banner {
+  padding-top: 4.5em;
+  background-color: #ffffff;
+}
+.banner .container {
+  padding-top: 125px;
+  padding-bottom: 110px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .banner .container {
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+}
+.banner .container .container__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.banner .container .container__row .banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding-bottom: 25px;
+}
+.banner .container .container__row .banner-text .banner-text__title.banner-text__title--style {
+  color: #ff9100;
+  font-size: 45px;
+  font-family: "Heebo", sans-serif;
+  line-height: 68px;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .banner .container .container__row .banner-text .banner-text__title.banner-text__title--style {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .container .container__row .banner-text .banner-text__title.banner-text__title--style {
+    font-size: 23px;
+    line-height: 30.76px;
+  }
+}
+@media (max-width: 576px) {
+  .banner .container .container__row .banner-text .banner-text__title.banner-text__title--style {
+    font-size: 18px;
+    line-height: 25.76px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .banner .container .container__row .banner-text .banner-text__title.banner-text__title--style {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .banner .container .container__row .banner-text .banner-text__title.banner-text__title--style {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.banner .container .container__row .banner-text .banner-text__title div {
+  overflow: hidden;
+}
+.banner .container .container__row .banner-text .banner-text__title div span {
+  display: inline-block;
+  transform: translateY(100%);
+}
+.banner .container .container__row .banner-text .banner-text__title div strong {
+  color: #3c3d71;
+  font-weight: bolder;
+  font-size: 55px;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .banner .container .container__row .banner-text .banner-text__title div strong {
+    font-size: 48px;
+    line-height: 10px;
+  }
+}
+@media (min-width: 990px) and (max-width: 1060px) {
+  .banner .container .container__row .banner-text .banner-text__title div strong {
+    font-size: 35px;
+    line-height: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .container .container__row .banner-text .banner-text__title div strong {
+    font-size: 28.39px;
+    line-height: 30.76px;
+  }
+}
+@media (max-width: 576px) {
+  .banner .container .container__row .banner-text .banner-text__title div strong {
+    font-size: 18px;
+    line-height: 25.76px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .banner .container .container__row .banner-text .banner-text__title div strong {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .banner .container .container__row .banner-text .banner-text__title div strong {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.banner .container .container__row .banner-text .banner-text__description.banner-text__description--style {
+  font-size: 24px;
+  color: #2a2527;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .banner .container .container__row .banner-text .banner-text__description.banner-text__description--style {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .container .container__row .banner-text .banner-text__description.banner-text__description--style {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .banner .container .container__row .banner-text .banner-text__description.banner-text__description--style {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .banner .container .container__row .banner-text .banner-text__description.banner-text__description--style {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .banner .container .container__row .banner-text .banner-text__description.banner-text__description--style {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .container .container__row .banner-text .banner-text__description .text-to-hide {
+    display: none;
+  }
+}
+.banner .container .container__row .banner-text .banner-text__bouton.banner-text__bouton--style {
+  background-color: #3c3d71;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Heebo", sans-serif;
+  text-transform: none;
+  font-weight: bolder;
+  border-radius: 8px;
+  padding: 12.5px 25px;
+}
+.banner .container .container__row .banner-text .banner-text__bouton.banner-text__bouton--style:hover {
+  box-shadow: 3px 5px #ff9100;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .banner .container .container__row .banner-text .banner-text__bouton.banner-text__bouton--style {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .container .container__row .banner-text .banner-text__bouton.banner-text__bouton--style {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 576px) {
+  .banner .container .container__row .banner-text .banner-text__bouton.banner-text__bouton--style {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .banner .container .container__row .banner-text .banner-text__bouton.banner-text__bouton--style {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .banner .container .container__row .banner-text .banner-text__bouton.banner-text__bouton--style {
+    font-size: 10px;
+  }
+}
+.banner .container .container__row .banner-image {
+  position: relative;
+}
+.banner .container .container__row .banner-image .banner-image__img {
+  width: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  animation: move-image 3s ease-in-out 3s infinite;
+}
+@keyframes move-image {
+  0% {
+    transform: translateY(5px);
+    transition: 2s ease;
+  }
+  50% {
+    transform: translateY(-5px);
+    transition: 2s ease;
+  }
+  100% {
+    transform: translateY(5px);
+    transition: 2s ease;
+  }
+}
+.banner .container .container__row .banner-image .banner-image__arriere {
+  width: 45rem;
+  height: 25rem;
+  display: none;
+}
+.banner .container .container__row .banner-image .banner-image__arriere.banner-image__arriere--style {
+  background-color: #ff9100;
+  border-radius: 100%;
+  position: absolute;
+  top: 25rem;
+  transform: rotate(-30deg);
+  opacity: 0.3;
+}
+
+/*# sourceMappingURL=banner.css.map */

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jordan mosongo</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="assets/materialize/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link href="assets/aos.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="assets/aos-master/dist/aos.css">
+  <script src="https://kit.fontawesome.com/89890b09d8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css_files/header.css">
+  <link rel="stylesheet" href="css_files/banner.css">
+  <link rel="stylesheet" href="css_files/about.css">
+  <link rel="stylesheet" href="css_files/photo.css">
+  <link rel="stylesheet" href="css_files/skills.css">
+  <link rel="stylesheet" href="css_files/passion.css">
+  <link rel="stylesheet" href="css_files/projects.css">
+  <link rel="stylesheet" href="css_files/contact.css">
+  <link rel="stylesheet" href="css_files/footer.css">
+</head>
+<body>
+  <section class="navigation">
+    <nav class="navbar navbar--color">
+      <div class="nav-wrapper container nav-wrapper--color">
+        <a href="#!" class="brand-logo brand-logo--color">Jm</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down menu-link">
+          <li><a href="#" class="menu-link__item menu-link__item--style active" onclick="activateLink(event)">Acceuil</a></li>
+          <li><a href="#about" class="menu-link__item menu-link__item--style" onclick="activateLink(event)">A propos</a></li>
+          <li><a href="#skills" class="menu-link__item menu-link__item--style" >Skills</a></li>
+          <li><a href="#projects" class="menu-link__item menu-link__item--style" onclick="activateLink(event)">Projets</a></li>
+          <li><a href="#contact" class="menu-link__item menu-link__item--style" onclick="activateLink(event)">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">Acceuil</a></li>
+      <li><a href="#">A propos</a></li>
+      <li><a href="collapsible.html">Skills</a></li>
+      <li><a href="mobile.html">Projets</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </section>
+
+  <section class="banner banner--style">
+    <div class="container valign-wrapper">
+      <div class="row container__row container__row--style">
+        <div class="col m6 l6 s6  banner-text">
+          <h1 class="banner-text__title banner-text__title--style">
+            <div>
+              <span class="banner-text__title__span">Salut,</span> 
+            </div>
+            <div>
+              <span class="banner-text__title__span">Je m'appelle</span>
+            </div>
+            <div>
+              <span class="banner-text__title__span"><strong>Jordan MOSONGO</strong></span>
+            </div>
+          </h1>
+          
+          <p class="banner-text__description banner-text__description--style">Apprenant développeur à la Kinshasa Digital Academy, <br>
+          Etudiant en Génie Informatique<span class="text-to-hide">, passionné par la programmation, l'intelligence artificielle et
+          la cybersécurité</span></p>
+        <button class="banner-text__bouton banner-text__bouton--style">plus sur moi</button>
+        </div>
+        <div class="col m6 l6 s6 banner-image" >
+          <img src="images/jordan.png" alt="photo d'acceuil" class="banner-image__img">
+          <div class="banner-image__arriere banner-image__arriere--style"></div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section class="about about--style .hide-on-small" id="about">
+    <div class="container tablet-and-up-container">
+      <div class="row">
+        <div class="col m6 s6 x6 l6 about__title about__title--style">
+          <h2 data-aos="zoom-in">A propos de moi</h2>
+          <div class="technologies">  
+            <div><img src="images/technos/new/css.png" alt=""></div>
+                <div><img src="images/technos/new/mongodb.png" alt=""></div>
+                <div><img src="images/technos/new/angular.png" alt=""></div>
+                <div><img src="images/technos/new/js.png" alt=""></div>
+                <div><img src="images/technos/new/html.png" alt=""></div>
+          </div>
+         
+        </div>
+        <div class="col m6 s6 x6 l6 about__text about__text--style" data-aos="zoom-in">
+          <!-- <p id="text-descriptif"></p>   -->
+          <p>Après mon inscription en Informatique à l'Université de Kinshasa, je me suis lancé dans l'Apprentissage des
+            langages de programmation dont C, C# et Java. Peu après, j'ai porté intérêt sur le web et le mobile
+             avec de nouvelles technologies. <br>
+            L'Informatique étant pour moi une passion, ma vision est centrée principalement sur la programmation, 
+              l'intelligence artificielle et la cybersécurité.
+            </p> 
+          <div class="download">
+            <!-- <i class="material-icons">download</i> -->
+            <button class="about__text__bouton--style">Télécharger le CV</button>
+          </div>
+         
+        </div>
+      </div>
+      
+    </div>
+    <div class="mobile-container">
+        <div class="container">
+          <div class="row">            
+            <div class="col s12"> 
+              <h2 data-aos="zoom-in"><span>A propos de moi</span></h2>                           
+              <div class="about-mobile-content" data-aos="zoom-in">                
+                <p>Après mon inscription en Informatique à l'Université de Kinshasa, je me suis lancé dans l'Apprentissage des
+                  langages de programmation dont C, C# et Java. Peu après, j'ai porté intérêt sur le web et le mobile
+                   avec de nouvelles technologies.
+                 
+                  </p>                          
+                <button class="about__text__bouton--style">Télécharger le CV</button>
+              </div>
+              <!-- <div class="technologies">
+                <div><img src="images/technos/new/angular.png" alt=""></div>
+                <div><img src="images/technos/new/mongodb.png" alt=""></div>
+                <div><img src="images/technos/new/nodejs.png" alt=""></div>
+                <div><img src="images/technos/new/js.png" alt=""></div>
+                <div><img src="images/technos/new/html.png" alt=""></div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  
+  <section class="photo">
+    <h2 class="photo__title photo__title--style"><span>Coding...</span></h2>
+    <img src="images/first__.jpg" alt="image for jordan">
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="container skills__content">
+      <h2 data-aos="zoom-in">Compétences</h2>  
+      <div class="row" id="first-row-of-skills">
+            <!-- <div class="col s4">
+                <div class="skill__element">
+                  <img src="images/technos/new/html.png" alt="logo for html">
+                </div>
+                <div class="skill__name"></div>
+                <p>Html 5</p>
+            </div>
+            <div class="col s4">
+              <div class="skill__element">
+                <img src="images/technos/new/css.png" alt="logo for css">
+              </div>
+              <div class="skill__name"></div>
+              <p>Css3</p>
+            </div>
+            <div class="col s4">
+              <div class="skill__element">
+                <img src="images/technos/new/js.png" alt="logo for javascript">
+              </div>
+              <div class="skill__name"></div>
+              <p>Javascript</p>
+            </div> -->
+      </div>        
+      <div class="row" id="second-row-of-skills">
+        <!-- <div class="col m4 s4 l4">
+          <div class="skill__element">
+            <img src="images/technos/new/relational-database.png" alt="logo for relational databases">
+          </div>
+          <div class="skill__name"></div>
+          <p>R-database</p>
+        </div>
+        <div class="col m4 s4 l4">
+          <div class="skill__element"> 
+            <img src="images/technos/new/mongodb.png" alt="logo for mongo">           
+          </div>
+          <div class="skill__name"></div>
+          <p>MongoDb</p>
+        </div>
+        <div class="col m4 s4 l4">
+          <div class="skill__element">
+            <img src="images/technos/new/nodejs.png" alt="logo for node">
+          </div>
+          <div class="skill__name"></div>
+          <p>NodeJs</p>
+        </div> -->
+      </div>  
+    </div>
+  </section>
+  <section class="passion">
+    <div class="container passion__container">
+      <div class="row">
+        <div class="col m6 passion-workspace">
+          <img src="images/technos/workspace_.png" alt="my workspace">
+        </div>
+        <div class="col m6 passion-talent">
+          <h2>Une passion, un talent...</h2>
+          <p> L'Informatique est pour moi une passion.
+            ma vision est centrée principalement sur la programmation, 
+            l'intelligence artificielle et la cybersécurité.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projects">
+
+    <!-- <div class="projects__first-corner"></div>  -->
+    <div class="projects__third-corner"></div>
+    <div class="projects__fourth-corner"></div>
+   
+    <div class="container projects__content">
+       <h2 class="projects__content__title" data-aos="zoom-in">Projets réalisés</h2>
+       
+       <div class="btn-projects">
+         <button class="btn-projects__all">All</button>
+         <button class="btn-projects__web">Web</button>
+         <button class="btn-projects__mobile">Mobile</button>
+         <button class="btn-projects__desktop">Desktop</button>
+       </div>
+       
+       <div class="projects__content__elements" id="projects-container">
+         <div class="first-element">
+            <div class="technos">
+              <p>
+                Mon portfolio. <br>
+                Html5, Sass, Materialize-css et Javascript
+              </p>
+              <div class="technos-link">
+                <a href=""><i class="fab fa-github fa-2x"></i></a>
+                <a href=""><i class="fas fa-link fa-2x"></i></a>
+              </div>
+           </div>
+         </div>
+         
+         <div class="first-element">
+          <div class="technos">
+            <p>
+              Mon portfolio. <br>
+              Html5, Sass, Materialize-css et Javascript
+            </p>
+            <div class="technos-link">
+              <a href=""><i class="fab fa-github fa-2x"></i></a>
+              <a href=""><i class="fas fa-link fa-2x"></i></a>
+            </div>
+         </div>
+         </div>
+         <div class="first-element">
+          <div class="technos">
+            <p>
+              Mon portfolio. <br>
+              Html5, Sass, Materialize-css et Javascript
+            </p>
+            <div class="technos-link">
+              <a href=""><i class="fab fa-github fa-2x"></i></a>
+              <a href=""><i class="fas fa-link fa-2x"></i></a>
+            </div>
+         </div>
+         </div>         
+       </div>
+  
+    </div>
+  </section>
+  <section class="contact">  
+    <h2 data-aos="zoom-in">Formulaire de contact</h2>
+    <div class="container container-content">      
+      <div class="row">
+        <div class="col s12 contact__message">
+            <form id="form" data-aos="zoom-in">
+              <div class="form-content">
+                <div class="form-group">
+                  <label for="sujet">Objet</label>
+                  <select name="sujet" id="sujet" >
+                    <option value=""></option>
+                    <option value="M'engager à temps plein">M'engager à temps plein</option>
+                    <option value="">M'engager à temps partiel</option>
+                    <option value="">Participer à un projet</option>
+                    <option value="">Me soumettre projet</option>
+                    <option value="">Conception du système d'information</option>
+                    <option value="">Besoin d'une formation</option>
+                    <option value="">Besoin d'un algorithme pour un problème complexe</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <div class="col s6">
+                    <div class="form-group">
+                      <label for="nom">Nom</label>
+                      <input type="text" id="nom">
+                     </div>
+                  </div>
+                  <div class="col s6">
+                    <div class="form-group">
+                      <label for="">Type de personne</label>
+                      <select name="" id="">
+                        <option value="" class="first-item"></option>
+                        <option value="">Personne physique</option>
+                        <option value="">Personne morale</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>         
+               <div class="row">
+                 <div class="col s6">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                  </div> 
+                 </div>
+                 <div class="col s6">
+                  <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone">
+                  </div>
+                 </div>
+               </div>             
+                 
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message"></textarea>
+                </div>  
+                <div class="row">
+                  <div class="col s6">
+                    <div class="form-group">
+                      <div class="switch">
+                        <label>
+                          Cas d'urgence 
+                          <input type="checkbox">
+                          <span class="lever"></span>
+                          
+                        </label>
+                      </div> 
+                    </div>
+                  </div>
+                  <div class="col 6">
+                    <div class="form-group">
+                  
+                      <div class="urgence-group">
+                        <label for="">Delai maximun de réponse (jours)</label>
+                        <input type="number">
+                      </div>
+                   </div>
+                  </div>
+                </div>
+                  
+              </div>
+              <div class="form-button">
+                <button class="btn-large" type="button" id="bouton-submit"> <i class="material-icons right">send</i>Envoyer</button>
+              </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer">    
+    <div class="footer__second-corner"></div>
+    <div class="container footer__container">
+      <div class="row footer__container__row">
+        <div class="col m4 footer__container__row__content">
+          <q data-aos="zoom-in-right">
+            Le rêve sans objectif n'est qu'un rêve.
+            L' objectif sans discipline, ne sert à rien
+          </q>
+        </div>
+        <div class="col m4 footer__container__row__separator">
+          <div class="empty-point"></div>
+        </div>
+        <div class="col m4 footer__container__row__newsletter" data-aos="zoom-in-left">
+          <p>Inscrivez-vous à ma newsletter pour rester au courant de mes
+            réalisations
+          </p>
+          <form action="">
+            <input type="email" placeholder="Adresse Email" class="newsletter__input">
+            <button class="newsletter__button">S'inscrire</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__paragraph">
+        <div class="social-network">
+          <a href="" id="facebook"><i class="material-icons">facebook</i></a>
+         <a href="mailTo:mosongojordan@gmail.com" id="email"><i class="material-icons">email</i></a>        
+        </div>
+        <p><a href="+243 815392056" id="telephone"></a></p>        
+      </div>
+    </div>    
+  </section>  
+  <footer>
+    <a href="#acceuil" class="footer-link">Haut de page</a>
+    <p>&copy;copyright : jordan mosongo 2021</p>
+  </footer>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script type="text/javascript" src="assets/jquery.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+  <script src="assets/materialize/js/materialize.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script> -->
+  <script src="assets/gsap-public/minified/gsap.min.js"></script>
+  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+  <!-- <script src="assets/aos.js"></script> -->
+  <script src="assets/aos-master/dist/aos.js"></script>
+  <script src="main.js"></script>
+  <script src="service.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

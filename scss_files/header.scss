@@ -1,0 +1,61 @@
+@import "../main.scss";
+.navbar{
+    height: 4.5rem;
+    position: fixed;
+    z-index: 9999;
+    &.navbar--color{
+        background-color: $color-blue;
+    }
+    .nav-wrapper{
+        .brand-logo--color{
+            color: $color-yellow;
+            font-family: $family-lobster;
+            font-size: 3em;
+        }
+
+    }
+    .menu-link{
+        .menu-link__item{
+            &.menu-link__item--style{
+                font-family: $family-roboto;
+                font-size: 16px;
+                position: relative;
+                &.active{
+                    color: $color-yellow;
+                    background-color: $color-white;
+                    opacity: 1;
+                    transition: all .8s ease-in-out;
+                    border-radius: 0 0 15px 15px;
+                }
+                &:hover{
+                    color: $color-yellow;  
+                    background-color: $color-blue; 
+                    position: relative;           
+                }
+                &:hover::after{
+                    content: "";
+                    width: 63%;
+                    height: 2px;
+                    background: -webkit-linear-gradient(45deg, $color-white 46%, $color-yellow 0%);
+                    position: absolute;
+                    left: 15px;
+                    top: 50px;
+                    transition: all .9s ease;
+                    animation: hover-effect .9s ease-in-out 1;
+                    @keyframes hover-effect {
+                        0%{
+                            width: 0%;
+                            transition: all .9s ease;
+                        }
+                        100%{
+                            width: 63%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+

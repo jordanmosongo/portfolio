@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0px;
+}
+
+.footer {
+  background-color: #2a2527;
+  position: relative;
+  overflow: hidden;
+}
+.footer .footer__second-corner {
+  height: 9em;
+  width: 55em;
+  position: absolute;
+  background-color: #ffffff;
+  border: 7px solid #ff9100;
+  transform: rotate(15deg);
+  background-color: #3c3d71;
+  right: -4em;
+  top: -9.5em;
+}
+@media (max-width: 768px) {
+  .footer .footer__second-corner {
+    height: 5em;
+  }
+}
+.footer .footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer__container .footer__container__row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 30px 0;
+}
+@media (max-width: 540px) {
+  .footer .footer__container .footer__container__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer .footer__container .footer__container__row .footer__container__row__content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.footer .footer__container .footer__container__row .footer__container__row__content q {
+  font-size: 24px;
+  color: #ff9100;
+  font-family: "Roboto", sans-serif;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .footer .footer__container .footer__container__row .footer__container__row__content q {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__container .footer__container__row .footer__container__row__content q {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .footer .footer__container .footer__container__row .footer__container__row__content q {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .footer .footer__container .footer__container__row .footer__container__row__content q {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .footer .footer__container .footer__container__row .footer__container__row__content q {
+    font-size: 10px;
+  }
+}
+.footer .footer__container .footer__container__row .footer__container__row__separator {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer .footer__container .footer__container__row .footer__container__row__separator .empty-point {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: #ff9100;
+  position: relative;
+  box-shadow: 3px 1.5px #ffffff;
+}
+@media (max-width: 540px) {
+  .footer .footer__container .footer__container__row .footer__container__row__separator .empty-point {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    box-shadow: 3px #ffffff;
+  }
+}
+.footer .footer__container .footer__container__row .footer__container__row__separator .empty-point::before {
+  content: "";
+  width: 0;
+  height: 16em;
+  border-left: 7px dashed #ff9100;
+  position: absolute;
+  left: 10px;
+  top: -7.09em;
+}
+@media (max-width: 540px) {
+  .footer .footer__container .footer__container__row .footer__container__row__separator .empty-point::before {
+    height: 16em;
+    transform: rotate(90deg);
+  }
+}
+.footer .footer__container .footer__container__row .footer__container__row__newsletter p {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter p {
+    font-size: 10px;
+  }
+}
+.footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__input {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  border-bottom: 2px solid #ff9100;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__input {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__input {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__input {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__input {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__input {
+    font-size: 10px;
+  }
+}
+.footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__input:focus {
+  outline: none;
+  border-bottom: 2px solid #ffffff;
+}
+.footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__button {
+  background-color: #2a2527;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Heebo", sans-serif;
+  text-transform: none;
+  font-weight: bolder;
+  border-radius: 8px;
+  padding: 12.5px 25px;
+  cursor: pointer;
+  border: 3px solid #ff9100;
+}
+.footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__button:hover {
+  box-shadow: 3px 5px #ffffff;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__button:hover {
+    box-shadow: 2px 3px #ffffff;
+  }
+}
+@media (max-width: 576px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .footer .footer__container .footer__container__row .footer__container__row__newsletter .newsletter__button {
+    font-size: 10px;
+  }
+}
+.footer .footer__container .footer__paragraph {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .footer .footer__container .footer__paragraph {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__container .footer__paragraph {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .footer .footer__container .footer__paragraph {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .footer .footer__container .footer__paragraph {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .footer .footer__container .footer__paragraph {
+    font-size: 10px;
+  }
+}
+.footer .footer__container .footer__paragraph .social-network {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.footer .footer__container .footer__paragraph .social-network a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer .footer__container .footer__paragraph p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.footer .footer__container .footer__paragraph p a {
+  color: #ff9100;
+  cursor: inherit;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #1b1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-link {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  footer .footer-link {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  footer .footer-link {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  footer .footer-link {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  footer .footer-link {
+    font-size: 10px;
+  }
+}
+footer .footer-link:hover {
+  color: #ff9100;
+}
+footer .footer-link:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: -webkit-linear-gradient(45deg, #ffffff 46%, #ff9100 0%);
+  position: absolute;
+  left: 0;
+  top: 30px;
+  transition: all 0.9s ease;
+  animation: hover-effect 0.9s ease-in-out 1;
+}
+@media (max-width: 768px) {
+  footer .footer-link:hover::after {
+    top: 20px;
+  }
+}
+@keyframes hover-effect {
+  0% {
+    width: 0%;
+    transition: all 0.9s ease;
+  }
+  100% {
+    width: 100%;
+  }
+}
+footer p {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  footer p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  footer p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  footer p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  footer p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  footer p {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

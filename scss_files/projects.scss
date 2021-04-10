@@ -1,0 +1,94 @@
+@import "../main.scss";
+.projects{
+    background-color: $color-white;
+    position: relative;
+    overflow: hidden;
+    .projects__third-corner{
+        @include shape();
+        right: -4em;
+        top: -9.5em;
+       
+       
+    }
+    .projects__fourth-corner{
+        @include shape();
+        left: -4em;
+        bottom: -9.5em;
+        background-color: $color-blue;
+    }
+    .projects__content{
+        //height: 75rem;
+        @include flex-two();
+        justify-content: center;
+                    
+        .projects__content__title{
+            @include sub-title($color-blue, $color-blue);
+        }
+        .btn-projects{
+            @include flex-one();
+            width: 40%;
+            justify-content: space-between;
+            @media (max-width:540px) {
+                width: 85%;
+            }
+            button{
+                @include bouton($color-yellow, $color-white, $color-blue);
+                border: 2px solid $color-blue;
+                cursor: pointer;
+                                       
+                
+            }
+        }
+        .projects__content__elements{
+            width: 100%;
+            height: 100%;
+            padding-top: 50px;
+            padding-bottom: 150px;
+            @include flex-one();
+            justify-content: space-between;
+            @media (max-width: 535px) {
+                @include flex-two();
+                justify-content: space-around;
+            }
+            .first-element{
+               width: 30%;
+                border: 2px solid $color-blue;
+                height: 25em;                
+                border-radius:5px;
+                box-shadow: 3px 3px 3px rgb(182, 181, 181);
+                background-image: url("../images/realisation/portfolio.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                overflow: hidden;
+                @media (max-width:535px) {
+                    width: 100%; 
+                    height: 15em; 
+                    margin-bottom: 10px;
+                }
+                .technos{                  
+                    width: 100%;
+                    height: 40%;
+                    background-color: $color-white;
+                    border-top: 2px solid $color-blue;
+                    @include flex-two();
+                    justify-content: space-around;
+                    .technos-link{
+                        @include flex-one();
+                        justify-content: center;
+                            i{
+                                color: $color-blue;
+                                margin-left: 25px;
+                                margin-right: 25px;
+                            }
+                    }
+                   
+                }
+            }
+        }
+        
+    }
+}

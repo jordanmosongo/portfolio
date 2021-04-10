@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0px;
+}
+
+.projects {
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+.projects .projects__third-corner {
+  height: 9em;
+  width: 55em;
+  position: absolute;
+  background-color: #ffffff;
+  border: 7px solid #ff9100;
+  transform: rotate(15deg);
+  right: -4em;
+  top: -9.5em;
+}
+@media (max-width: 768px) {
+  .projects .projects__third-corner {
+    height: 5em;
+  }
+}
+.projects .projects__fourth-corner {
+  height: 9em;
+  width: 55em;
+  position: absolute;
+  background-color: #ffffff;
+  border: 7px solid #ff9100;
+  transform: rotate(15deg);
+  left: -4em;
+  bottom: -9.5em;
+  background-color: #3c3d71;
+}
+@media (max-width: 768px) {
+  .projects .projects__fourth-corner {
+    height: 5em;
+  }
+}
+.projects .projects__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects .projects__content .projects__content__title {
+  color: #3c3d71;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5em;
+  position: relative;
+  padding-bottom: 40px;
+}
+.projects .projects__content .projects__content__title::before {
+  content: "";
+  width: 100%;
+  height: 7px;
+  background: -webkit-linear-gradient(45deg, #3c3d71 46%, #ff9100 0%);
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+.projects .projects__content .btn-projects {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+}
+@media (max-width: 540px) {
+  .projects .projects__content .btn-projects {
+    width: 85%;
+  }
+}
+.projects .projects__content .btn-projects button {
+  background-color: #ffffff;
+  color: #ff9100;
+  font-size: 24px;
+  font-family: "Heebo", sans-serif;
+  text-transform: none;
+  font-weight: bolder;
+  border-radius: 8px;
+  padding: 12.5px 25px;
+  cursor: pointer;
+  border: 2px solid #3c3d71;
+  cursor: pointer;
+}
+.projects .projects__content .btn-projects button:hover {
+  box-shadow: 3px 5px #3c3d71;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .projects .projects__content .btn-projects button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .projects .projects__content .btn-projects button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 576px) {
+  .projects .projects__content .btn-projects button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .projects .projects__content .btn-projects button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .projects .projects__content .btn-projects button {
+    font-size: 10px;
+  }
+}
+.projects .projects__content .projects__content__elements {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 535px) {
+  .projects .projects__content .projects__content__elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.projects .projects__content .projects__content__elements .first-element {
+  width: 30%;
+  border: 2px solid #3c3d71;
+  height: 25em;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #b6b5b5;
+  background-image: url("../images/realisation/portfolio.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+@media (max-width: 535px) {
+  .projects .projects__content .projects__content__elements .first-element {
+    width: 100%;
+    height: 15em;
+    margin-bottom: 10px;
+  }
+}
+.projects .projects__content .projects__content__elements .first-element .technos {
+  width: 100%;
+  height: 40%;
+  background-color: #ffffff;
+  border-top: 2px solid #3c3d71;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.projects .projects__content .projects__content__elements .first-element .technos .technos-link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.projects .projects__content .projects__content__elements .first-element .technos .technos-link i {
+  color: #3c3d71;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/*# sourceMappingURL=projects.css.map */

@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0px;
+}
+
+.passion__container {
+  padding: 30px 0;
+}
+.passion__container .passion-workspace img {
+  width: 100%;
+}
+.passion__container .passion-talent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.passion__container .passion-talent h2 {
+  font-family: "Heebo", sans-serif;
+  font-size: 40px;
+  color: #3c3d71;
+}
+.passion__container .passion-talent p {
+  font-size: 24px;
+  color: #2a2527;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .passion__container .passion-talent p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .passion__container .passion-talent p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .passion__container .passion-talent p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .passion__container .passion-talent p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .passion__container .passion-talent p {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=passion.css.map */

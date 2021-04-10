@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0px;
+}
+
+.contact {
+  background-color: #3c3d71;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact h2 {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5em;
+  position: relative;
+  padding-bottom: 40px;
+}
+.contact h2::before {
+  content: "";
+  width: 100%;
+  height: 7px;
+  background: -webkit-linear-gradient(45deg, #ffffff 46%, #ff9100 0%);
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+.contact .container-content {
+  padding-bottom: 10px;
+}
+.contact .container-content .row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.contact .container-content .row .contact__message form {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 10px;
+}
+.contact .container-content .row .contact__message form .form-content .form-group {
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+.contact .container-content .row .contact__message form .form-content .form-group label {
+  font-size: 24px;
+  color: #3c3d71;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 18px;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .contact .container-content .row .contact__message form .form-content .form-group label {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .contact .container-content .row .contact__message form .form-content .form-group label {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .contact .container-content .row .contact__message form .form-content .form-group label {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .contact .container-content .row .contact__message form .form-content .form-group label {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .contact .container-content .row .contact__message form .form-content .form-group label {
+    font-size: 10px;
+  }
+}
+.contact .container-content .row .contact__message form .form-content .form-group input, .contact .container-content .row .contact__message form .form-content .form-group select {
+  font-size: 24px;
+  color: #2a2527;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 18px;
+  border-bottom: 2px solid #3c3d71;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .contact .container-content .row .contact__message form .form-content .form-group input, .contact .container-content .row .contact__message form .form-content .form-group select {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .contact .container-content .row .contact__message form .form-content .form-group input, .contact .container-content .row .contact__message form .form-content .form-group select {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .contact .container-content .row .contact__message form .form-content .form-group input, .contact .container-content .row .contact__message form .form-content .form-group select {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .contact .container-content .row .contact__message form .form-content .form-group input, .contact .container-content .row .contact__message form .form-content .form-group select {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .contact .container-content .row .contact__message form .form-content .form-group input, .contact .container-content .row .contact__message form .form-content .form-group select {
+    font-size: 10px;
+  }
+}
+.contact .container-content .row .contact__message form .form-content .form-group input:focus, .contact .container-content .row .contact__message form .form-content .form-group select:focus {
+  outline: none;
+  border-bottom: 2px solid #ff9100;
+}
+.contact .container-content .row .contact__message form .form-content .form-group textarea {
+  height: 7em;
+  border: none;
+  border-bottom: 2px solid #3c3d71;
+  font-size: 24px;
+  color: #2a2527;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-size: 18px;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .contact .container-content .row .contact__message form .form-content .form-group textarea {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .contact .container-content .row .contact__message form .form-content .form-group textarea {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .contact .container-content .row .contact__message form .form-content .form-group textarea {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .contact .container-content .row .contact__message form .form-content .form-group textarea {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .contact .container-content .row .contact__message form .form-content .form-group textarea {
+    font-size: 10px;
+  }
+}
+.contact .container-content .row .contact__message form .form-content .form-group textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #ff9100;
+}
+.contact .container-content .row .contact__message form .form-button .btn-large {
+  background-color: #3c3d71;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Heebo", sans-serif;
+  text-transform: none;
+  font-weight: bolder;
+  border-radius: 8px;
+  padding: 12.5px 25px;
+}
+.contact .container-content .row .contact__message form .form-button .btn-large:hover {
+  box-shadow: 3px 5px #ff9100;
+}
+@media (min-width: 768px) and (max-width: 1420px) {
+  .contact .container-content .row .contact__message form .form-button .btn-large {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .contact .container-content .row .contact__message form .form-button .btn-large {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 576px) {
+  .contact .container-content .row .contact__message form .form-button .btn-large {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) {
+  .contact .container-content .row .contact__message form .form-button .btn-large {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) and (max-width: 320px) and (max-width: 280px) {
+  .contact .container-content .row .contact__message form .form-button .btn-large {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

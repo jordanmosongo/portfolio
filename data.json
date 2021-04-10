@@ -1,0 +1,94 @@
+{
+    "identity" : 
+        {
+            "nom" : "MOSONGO",
+            "Prenom": "Jordan",
+            "textDescriptif": "Après mon inscription en Informatique à l'Université de Kinshasa, je me suis lancé dans l'Apprentissage des langages de programmation dont C, C# et Java. Peu après, j'ai porté intérêt sur le web et le mobile avec de nouvelles technologies. L'Informatique étant pour moi une passion, ma vision est centrée principalement sur la programmation, l'intelligence artificielle et la cybersécurité.",
+            "telephone" : "+243 815392056",
+            "email" : "mosongojordan@gmail.com",
+            "facebook": "https://lien_mapage_facebook.com",
+            "twitter" : "https://lien_mapage_twitter.com",
+            "linkedIn" : "https://lien_mapage_linkedIn.com"
+        }
+    ,
+    "skills" : [
+        {
+            "technology" : "Html5",
+            "logo" : "images/technos/new/html.png"
+        },
+        {
+            "technology" : "Css3 (saas)",
+            "logo" : "images/technos/new/css.png"
+        },
+        {
+            "technology" : "Javascript",
+            "logo" : "images/technos/new/js.png"
+        },
+        {
+            "technology" : "Bases de données relationnelles",
+            "logo" : "images/technos/new/relational-database.png"
+        },
+        {
+            "technology" : "MongodB",
+            "logo" : "images/technos/new/mongodb.png"
+        },
+        {
+            "technology" : "nodeJs",
+            "logo" : "images/technos/new/nodejs.png"
+        }
+        
+        
+
+    ],
+    "projects" : [
+        {
+            "title" : "projet-kda",
+            "image" : "../images/realisation/projetkda.png",
+            "technologies" : [
+                "Html5",
+                "css3"
+            ],
+            "lienSite" : "https://lien-vers-le-site.com",
+            "lienGitHub" : "https://lien-vers-le-repo-git"
+        },
+        {
+            "title" : "portfolio",
+            "image" : "../images/realisation/portfolio.png",
+            "technologies" : [
+                "Html5",
+                "css3",
+                "saas",
+                "json",
+                "javascript"
+            ],
+            "lienSite" : "https://lien-vers-le-site.com",
+            "lienGitHub" : "https://lien-vers-le-repo-git"
+        },
+        {
+            "title" : "formulaire-contact",
+            "image" : "../images/realisation/lupitadji.png",
+            "technologies" : [
+                "Html5",
+                "css3",
+                "javascript"
+            ],
+            "lienSite" : "https://lien-vers-le-site.com",
+            "lienGitHub" : "https://lien-vers-le-repo-git"
+        }
+    ],
+    "visitors" : [
+        {
+            "nom" : "first visitor",
+            "type" : "personne physique",
+            "email": "firstvisitor@gmail.com",
+            "telephone": "089234578",
+            "message":{
+                "sujet" : "Me soumettre un projet",
+                "contenu": "Salut, je suis content de visiter ce portfolio. J'ai un projet à vous soumettre.",
+                "urgence": true,
+                "delaiReponse": 3
+            }
+        }
+    ]
+    
+}

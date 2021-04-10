@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0px;
+}
+
+.photo {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: #3c3d71;
+  position: relative;
+}
+.photo img {
+  width: 100%;
+  opacity: 0.5;
+}
+.photo h2 {
+  color: #ffffff;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  top: -5%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  height: 100%;
+}
+
+/*# sourceMappingURL=photo.css.map */

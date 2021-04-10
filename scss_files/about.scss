@@ -1,0 +1,187 @@
+@import "../main.scss";
+@mixin tech-animate {
+    position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                div{
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    background-color: transparent;
+                    bottom: -85px;
+                    animation: animate 20s linear infinite;
+                    img{
+                        width: 100%;
+                    }
+                    &:nth-child(1){
+                        left: 60%;
+                        width: 80px;
+                        height: 80px;
+                        animation-delay: 3s;
+                        animation-duration: 7s;
+                    }
+                    &:nth-child(2){
+                        left: 12%;
+                        width: 80px;
+                        height: 80px;
+                        animation-delay: 2s;
+                        animation-duration: 8s;
+                    }
+                    &:nth-child(3){
+                        left: 50%;
+                        width: 80px;
+                        height: 80px;
+                        animation-delay: 4s;
+                        animation-duration: 7s;
+                    }
+                    &:nth-child(4){
+                        left: 30%;
+                        width: 80px;
+                        height: 80px;
+                        animation-delay: 5s;
+                        animation-duration: 6s;
+                    }
+                    &:nth-child(5){
+                        left: 20%;
+                        width: 80px;
+                        height: 80px;
+                        animation-delay: 5.5s;
+                        animation-duration: 7s;
+                    }
+                    
+                    @keyframes animate {
+                        0%{
+                            transform: translateY(0) rotate(0deg);
+                            opacity: .8;
+                        }
+                        50%{
+                            opacity: 0.5;
+                        }
+                        100%{
+                            transform: translateY(-400px) rotate(360deg);
+                            opacity: 0;
+                        }
+                    }
+                }
+}
+.about{
+    &.about--style{
+        background-color: $color-blue;
+        width: 100%;
+        background:         
+        -webkit-linear-gradient(45deg, $color-blue 50%, $color-yellow 0%);
+    }
+    .tablet-and-up-container{
+        padding-top: 50px;   
+        padding-bottom: 50px;  
+        display: flex;
+        flex-direction: row;
+        justify-content: center;    
+           
+       .about__title{
+            @include flex-one();            
+            height: 100%;   
+            position: relative; 
+                   
+            h2{
+                @include sub-title($color-white, $color-white);
+            }
+            .technologies{
+                @include tech-animate();
+            }
+                      
+        }
+        @media (max-width : 767.9px) {
+            display: none;
+        }
+       .about__text{
+           height: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+           align-items: flex-start;
+        
+            p{
+                @include text-appearance($color-white);
+            }
+            .about__text__bouton--style{
+                @include bouton($color-yellow, $color-white, $color-blue);
+            }
+        }
+    }
+    .mobile-container{
+        width: 100%;
+        background:         
+        -webkit-linear-gradient(45deg, $color-blue 50%, $color-yellow 0%);
+        @media (min-width : 768px) {
+            display: none;
+        }
+        @media (max-width : 767.9px) {
+            display: inherit;
+        }
+        .container{
+           //padding-bottom: 30px;
+            display: flex;
+
+           .col{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            h2{
+                //margin-bottom: 10px;
+                //@include sub-title($color-white, $color-white);
+                span{
+                    color: $color-white;
+                    font-family: $family-roboto;
+                    font-size: 30px;
+                    position: relative;
+                    text-align: center;
+                    &::before{
+                        content: "";
+                        width: 100%;
+                        height: 5px;
+                        background:         
+                        -webkit-linear-gradient(45deg, $color-white 46%, $color-blue 0%);
+                        position: absolute;
+                        left: 0;
+                        top: 40px;
+                    }
+                }
+                 
+            }
+            .about-mobile-content{
+                    p{
+                        @include text-appearance($color-white);
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                    }
+                    .hide-on-med-and-down{
+                        @media (max-width:768px) {
+                            display: none;
+                        }
+                    }
+                    .download{
+                        border: 2px solid red;
+                        @include flex-one();
+                        i{
+                            font-size: 40px;
+                            color: $color-white;
+                        }
+                    }
+                    .about__text__bouton--style{
+                        @include bouton($color-yellow, $color-white, $color-yellow);
+                    }
+            }
+            .technologies{
+                @include tech-animate();
+            }
+            
+        }
+           
+        }
+    }
+
+}

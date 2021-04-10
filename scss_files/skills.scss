@@ -1,0 +1,77 @@
+@import "../main.scss";
+.skills{
+    position: relative;
+   // height: 70rem;
+    .skills__content{     
+        padding: 50px 0;  
+        @include flex-two();
+        justify-content: center;
+        h2{
+            @include sub-title($color-blue, $color-blue);
+        }
+        .col{
+            padding:20px 100px;
+            @include flex-two();
+            justify-content: center;
+            
+            .skill__element{
+                position: relative;
+                width: 140px;
+                height: 140px;
+                background-color: $color-white;
+                border-radius: 50%;
+                border: 5px solid $color-blue;
+                @include flex-one();
+                justify-content: center;
+                box-sizing: border-box;
+                img{
+                    width: 70%;
+                }
+                @media (max-width:576px) {
+                    width: 80px;
+                    height: 80px;
+                    border: 2.85px solid $color-blue;
+                }
+            }           
+            .skill__name{
+                //@include skill-appearance();
+                position: relative;
+                margin-top: 40px;
+                width: 20px;
+                height:20px;
+                background-color: $color-blue;
+                border-radius: 50%;
+                &::before{
+                    content: "";
+                    height: 40px;
+                    width: 2px;
+                    background-color: $color-blue;
+                    position: absolute;
+                    margin: auto;
+                    left: 8px;
+                    top: -40px;
+                    @media (max-width:576px) {
+                        height: 22.43px;
+                        top: -22.86px;
+                        left: 4.85px;
+                    }
+                }
+                @media (max-width:576px) {
+                    width: 11.43px;
+                    height: 11.43px;
+                    margin-top: 22.86px;
+                }
+
+            }
+            p{
+               @include text-appearance($color-blue);
+               text-align: center;
+            }
+            @media (max-width:576px) {
+                padding: 10px;
+            }
+        }
+        
+    }
+   
+}
