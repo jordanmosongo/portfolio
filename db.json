@@ -1,3 +1,4 @@
+
 {
     "identity" : 
         {
@@ -25,7 +26,7 @@
             "logo" : "images/technos/new/js.png"
         },
         {
-            "technology" : "Bases de données relationnelles",
+            "technology" : "R-databases",
             "logo" : "images/technos/new/relational-database.png"
         },
         {
@@ -42,49 +43,45 @@
     ],
     "projects" : [
         {
-            "title" : "projet-kda",
-            "technologies" : {
-                "first" : "Html5",
-                "second": "css3"
-            },
+            "title" : "Kinshasa digitale",
+            "description" : "Reproduction du site de l'agence kinshasa digitale",
+            "image" : "../images/realisation/projetkda.png",
+            "technologies" : [
+                "Html5",
+                "css3 pure"
+            ],
+            "lienSite" : "https://jordanmosongo.github.io/reproduction/",
+            "lienGitHub" : "https://lien-vers-le-repo-git"
+        },
+        {
+            "title" : "Portfolio",
+            "description" : "Un site biographe qui retrace toutes mes oeuvres",
+            "image" : "../images/realisation/portfolio.png",
+            "technologies" : [
+                "Html5",
+                "saas",
+                "javascript"
+            ],
             "lienSite" : "https://lien-vers-le-site.com",
             "lienGitHub" : "https://lien-vers-le-repo-git"
         },
         {
-            "title" : "portfolio",
-            "technologies" : {
-                "first" : "Html5",
-                "second": "css3",
-                "third" : "saas",
-                "fourth": "json",
-                "fifth" : "javascript"
-            },
-            "lienSite" : "https://lien-vers-le-site.com",
-            "lienGitHub" : "https://lien-vers-le-repo-git"
-        },
-        {
-            "title" : "formulaire-contact",
-            "technologies" : {
-                "first" : "Html5",
-                "second": "css3",
-                "third": "javascript"
-            },
-            "lienSite" : "https://lien-vers-le-site.com",
-            "lienGitHub" : "https://lien-vers-le-repo-git"
-        }
+    "title" : "Formulaire de contact",
+    "description" : "Une application frontEnd qui gère les contacts",
+    "image" : "../images/realisation/formulaireOne.png",
+    "technologies" : [
+        "Html5",
+        "css3",
+        "javascript"
     ],
-    "visitors" : [
+    "lienSite" : "https://lien-vers-le-site.com",
+    "lienGitHub" : "https://lien-vers-le-repo-git"
+}
+        
+    ],
+    "newsletter": [
         {
-            "nom" : "first visitor",
-            "type" : "personne physique",
-            "email": "firstvisitor@gmail.com",
-            "telephone": "089234578",
-            "message":{
-                "sujet" : "Me soumettre un projet",
-                "contenu": "Salut, je suis content de visiter ce portfolio. J'ai un projet à vous soumettre.",
-                "urgence": true,
-                "delaiReponse": 3
-            }
+            "email" : "firstemail@gmail.Com"
         }
     ]
     
